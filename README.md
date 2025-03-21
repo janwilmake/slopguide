@@ -11,6 +11,6 @@ Simple 4-step process:
 
 The next step will be the SLOP MCP and UITHUB MCP:
 
-![](slop-mcp.drawio.svg)
+![](slop-mcp.drawio.png)
 
 Let's talk on [X](https://x.com/janwilmake) if you have any thoughts/feedback/ideas. Let's build this in the open for a decentralised intelligent internet!
