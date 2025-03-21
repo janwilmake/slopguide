@@ -1,0 +1,8 @@
+name = "slopguide"
+dev.port = 3000
+compatibility_date = "2025-03-13"
+assets.directory = "./"
+routes = [
+  { pattern = "slopguide.com", custom_domain = true },
+  { pattern = "www.slopguide.com", custom_domain = true }
+]
