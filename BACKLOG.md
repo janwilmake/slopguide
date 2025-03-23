@@ -1,29 +1,6 @@
-# Generate Typedoc
+# Generate 'SLOP Guides'
 
-This will need to be done on vercel and can be done when filtering on ts(x) and then finding the common basepath:
-
-https://www.npmjs.com/package/typedoc
-https://www.npmjs.com/package/typedoc-plugin-markdown
-
-This will provide super accurate docs for all functions in a short format, and it's pretty much free to do.
-
-1. typedoc-zipobject.vercel.app using zipobject.vercel.app
-2. make available in context.forgithub.com
-
-# Generate OpenAPI
-
-If we can generate an OpenAPI programatically, we have a huge moat as it's not that straightforward. How this should be done:
-
-1. Identify all code files
-2. If it's more than 50k tokens, fail it for now. Codebase too large. ❌
-3. Determine if it's a server or not using an analysis question returning a boolean. If `false` cancel early ❌
-4. Figure out the server with domain.zipobject.com. If we have no domain, cancel early. ❌
-5. Determine if the server proxies a response from another server making the type interfaces unclear. Cancel early for this case ❌
-6. Ask Deepseek to generate the OpenAPI spec
-
-This ties into https://github.com/janwilmake/slopguide perfectly. Let's allow generating the openapi spec via uithub somehow. Main learning: forgithub.analysis is a bit too generic for most interesting use-cases.
-
-# Generate SLOP Guides
+> Dependant on openapi and typedoc work as zipobject plugins
 
 This can be done separately and is fun! For any codebase, I can:
 
